@@ -35,27 +35,28 @@
           <p class="text">ENJOY!</p>
         </div>
       </div>
-      <p>Our pizzas are pocket friendly. We have them on offer every friday, buy one get one free.It is Furahiday for you with pizza delight.</p>
-      <p>They come in different sizes for your prefference , from regular to large. Buy regular for sh.600, medium for sh.800 and large at sh.1000</p>
+      <p>Our pizzas are pocket friendly. We have them on offer every friday, buy one get one free.It is Furahiday for you with pizza delight!</p>
+      <p>They come in different sizes for your preference , from regular to medium to large. Buy regular for sh.600, medium for sh.800 and large at sh.1000. You also get a chance to choose your preffered crust and toppings. We are good and efficient like that!</p>
+      <p>oYou can also dine at our prestigious cafe. Place your order below for your delivery:</p>
       <div class="slideshow-container">
         <div class="mySlides">
           <p>Variety</p>
           <img src="images/pizza.jpeg" width="700px" height=500px>
         </div>
         <div class="mySlides">
-          <p>Barbecue chicken</p>
+          <p>Barbecue Chicken</p>
           <img src="images/barbecue chicken.jpeg" width="700px" height="500px">
         </div>
         <div class="mySlides">
-          <p>sea Food</p>
+          <p>Sea Food</p>
           <img src="images/seafood.jpg" width="700px" height="500px"></a>
         </div>
         <div class="mySlides">
-          <p>margarita</p>
+          <p>Margarita</p>
           <img src="images/margaritta.jpg" width="700px" height="500px"></a>
         </div>
         <div class="mySlides">
-          <p>Peperoni</p>
+          <p>Pepperoni</p>
           <img src="images/peri peri.jpg" width="700px" height="500px"></a>
         </div>
         <div class="mySlides">
@@ -63,7 +64,7 @@
           <img src="images/peperoni.png" width="700px" height="500px"></a>
         </div>
         <div class="mySlides">
-          <p>Spicy peri peri</p>
+          <p>Spicy Peri-Peri</p>
           <img src="images/spicy peri peri.jpg" width="700px" height="500px"></a>
         </div>
 
@@ -110,7 +111,7 @@
                 <li>Classic Pizzas</li>
                 <li>Deluxe Pizzas</li>
               </ol>
-            <label>Select from Deluxe Flavour:</label>
+            <label>Select from Deluxe FlavourS:</label>
             <select class="custom-select custom-select-md mb-3 flavour" required>
               <option value="vegfeast">Veg Feast</option>
               <option value="cheeseburger">Cheese Burger</option>
@@ -133,11 +134,33 @@
             </select>
             <label>Select Size:</label>
             <select class="custom-select custom-select-md mb-3" id="size" required>
-              <option value="regular">large</option>
+              <option value="regular">Large</option>
               <option value="medium">Medium</option>
               <option value="large">Regular</option>
             </select>
-           
+            <label for="crust">Select Crust:</label>
+            <select class="custom-select custom-select-md mb-3" id="crust" required>
+              <option value="custom">Custom @ sh.300</option>
+              <option value="flatbread">FlatBread @ sh.200</option>
+              <option value="thick">Thick @ Ksh.180</option>
+              <option value="thin">Thin @ Ksh.120</option>
+            </select>
+            <label>Select Toppings</label>
+            <select class="custom-select custom-select-md mb-3" id="toppings" required>
+              <option value="beef">Beef Peperoni @ sh.180</option>
+              <option value="chicken">Periperi Chicken @ sh.180</option>
+              <option value="olives">Olives @ sh.150</option>
+              <option value="macon">Macon @ sh.140</option>
+              <option value="mince">Mince @ sh.140</option>
+              <option value="mushroom">Mushroom @ sh.120</option>
+              <option value="pineapple">Pineapple @ sh.120</option>
+              <option value="sweetcorn">Sweet Corn @ sh.120</option>
+              <option value="tomato">Tomato @ sh.100</option>
+              <option value="onions">Onions @ sh.80</option>
+              <option value="greenpepper">Green Pepper @ sh.80</option>
+            </select>
+            <label for="number">Select Number:</label>
+            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
      </form>
          
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
