@@ -103,7 +103,7 @@
               <li>Deluxe Pizzas</li>
             </ol>
             <label>Select from Deluxe Flavours:</label>
-            <select class="custom-select custom-select-md mb-3 flavour" required>
+            <select class="custom-select custom-select-md mb-3 flavour" required="required">
               <option value="0">Select</option>
               <option value="veg feast">Veg Feast</option>
               <option value="cheese burger">Cheese Burger</option>
@@ -115,7 +115,7 @@
               <option value="spicy boerewors">Spicy Boerewors</option>
             </select>
             <label>Select from Classic Flavours:</label>
-            <select class="custom-select custom-select-md mb-3 flavour" required>
+            <select class="custom-select custom-select-md mb-3 flavour" required="required">
               <option value="select">Select</option>
               <option value="chicken $ mushroom">Chicken $ Mushroom</option>
               <option value="hawaiian">Hawaiian</option>
@@ -126,21 +126,21 @@
               <option value="periperi chicken">Peri-Peri Chicken</option>
             </select>
             <label>Select Size:</label>
-            <select class="custom-select custom-select-md mb-3" id="size" required>
+            <select class="custom-select custom-select-md mb-3" id="size" required="required">
               <option value="0">Select</option>
               <option value="large">Large @ sh.1000</option>
               <option value="medium">Medium @ sh.800</option>
               <option value="regular">Regular @ sh.600</option>
             </select>
             <label for="crust">Select Crust:</label>
-            <select class="custom-select custom-select-md mb-3" id="crust" required>
+            <select class="custom-select custom-select-md mb-3" id="crust" required="required">
               <option value="0">Select</option>
               <option value="Crispy">@ sh.250</option>
               <option value="FlatBread">FlatBread @ sh.200</option>
               <option value="Gluten-free">Gluten-free@ Ksh.200</option>
               <option value="Thick">Thick @ Ksh.180</option>
             </select>
-            <label for="Toppings">Select Your Toppings at @ sh.100 </label><br>
+            <label for="Toppings">Select Your Toppings @ sh.100 </label><br>
             <div class="custom-control custom-checkbox custom-control-inline">
               <input type="checkbox" class="custom-control-input" id="Mushroom" value="Mushroom" name="toppings">
               <label class="custom-control-label" for="Mushroom">Mushroom</label>
@@ -157,9 +157,9 @@
             <button type="submit" class="btn btn-orange proceed">Next...</button>
             <div class="col-sm-7">
               <div id="information">
-               <p>Your order is being processed and will be delivered to your doorstep within an hour.</p>
-               <p>Due to the Corona pandemic, we will not be recieving cash. See our other modes of payment below.</p>
-               <p>Enjoy our delicious pizza, and have a lovely time!</p>
+                <p>Your order is being processed and will be delivered to your doorstep within an hour.</p>
+                <p>Due to the Corona pandemic, we will not be recieving cash. See our other modes of payment below.</p>
+                <p>Enjoy our delicious pizza, and have a lovely time!</p>
               </div>
               <div class="choise">
                 <h2>Your Order:</h2>
@@ -181,12 +181,12 @@
                         <td id="pizzacrust"></td>
                         <td id="pizzatopping"></td>
                         <td id="totals"></td>
-                      </tr>                  
+                      </tr>
                     </tbody>
                   </table>
                   <p id="pizzatotal"></p>
-                  <p id="totalbill"></p> 
-                  <p id="addedprice">Delivery will cost sh.200/p>
+                  <p id="totalbill"></p>
+                  <p id="addedprice">Delivery will cost sh.200</p>
                   <p id="finallmessage"></p>
                 </div>
                 <button class="btn btn-orange addPizza">Add Pizza</button>
@@ -194,87 +194,89 @@
                 <button class="btn btn-orange deliver">Home delivery?</button>
               </div>
               <div class="delivery">
-                  <form>
-                    <div class="form-group">
-                      <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                      <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
-                      <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
-                      <button class="btn btn-orange" id="final-order">Check out</button>
-                    </div>
-                  </form>
-                  <div class="Get in touch">
-                    <h5>contact us on:</h5>
-                    <p><i class="fa fa-map-marker fa-2x">&nbsp;yaya center,second floor</i></p>
-                    <p><i class="fa fa-phone">&nbsp;0710585435,0794973746</i></p>
-                    <p><i class="fa fa-email">&nbsp;info@pizzadelight.com</i></p>
+                <form>
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name" required="required">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number"
+                      required="required">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery"
+                      required="required">
+                    <button class="btn btn-orange" id="final-order">Check out</button>
                   </div>
-                  <div class="social icons">
-                    <div id="contacts" class="small-divs">
-                      <h4></h4>
-                      <p>Follow us</p>
-                      <p><i class="fa fa-facebook-square">&nbsp;Pizza Delight</i></p>
-                      <p><i class="fa fa-instagram">&nbsp;Pizza Delight</i></p>
-                      <p><i class="fa fa-youtube ">&nbsp;Pizza Delight</i></p>
-                      <p><i class="fa fa-twitter ">&nbsp;Pizza Delight</i></p>
-                    </div>
-                    <div class="container">
-                      <form action="/action_page.php">
-                        <div class="col-50">
-                          <i class="fa fa-check-square" aria-hidden="true"></i>
-                          <label for="fname">Accepted Cards</label>
-                          <div class="icon-container">
-                            <i class="fa fa-cc-visa" style="color:navy;"></i>
-                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                            <p>Lipa na mpesa also available</p>
-                            <p>paybill number:03032006</p>
-                          </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="mapouter">
-                      <div class="gmap_canvas">
-                        <iframe width="350" height="180" id="gmap_canvas"
-                          src="https://maps.google.com/maps?q=Yaya%20center&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                          scrolling="no" marginheight="0" marginwidth="0">
-                        </iframe>
-                      </div>
-                      <style>
-                        .mapouter {
-                          position: relative;
-                          text-align: right;
-                          height: 180px;
-                          width: 350px;
-                        }
-            
-                        .gmap_canvas {
-                          overflow: hidden;
-                          background: none !important;
-                          height: 180px;
-                          width: 350px;
-                        }
-                      </style>
-                    </div>
-                  </div>
-                  <div class="col-md-1"></div>
+                </form>
+                <div class="Get in touch">
+                  <h5>contact us on:</h5>
+                  <p><i class="fa fa-map-marker fa-2x">&nbsp;yaya center,second floor</i></p>
+                  <p><i class="fa fa-phone">&nbsp;0710585435,0794973746</i></p>
+                  <p><i class="fa fa-email">&nbsp;info@pizzadelight.com</i></p>
                 </div>
-                <div class="row">
-                  <div class="container text-center footer">
-                    <p>&copy; 2019 | Pizza Delight</p>
+                <div class="social icons">
+                  <div id="contacts" class="small-divs">
+                    <h4></h4>
+                    <p>Follow us</p>
+                    <p><i class="fa fa-facebook-square">&nbsp;Pizza Delight</i></p>
+                    <p><i class="fa fa-instagram">&nbsp;Pizza Delight</i></p>
+                    <p><i class="fa fa-youtube ">&nbsp;Pizza Delight</i></p>
+                    <p><i class="fa fa-twitter ">&nbsp;Pizza Delight</i></p>
+                  </div>
+                  <div class="container">
+                    <form action="/action_page.php">
+                      <div class="col-50">
+                        <i class="fa fa-check-square" aria-hidden="true"></i>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                          <i class="fa fa-cc-visa" style="color:navy;"></i>
+                          <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                          <p>Lipa na mpesa also available</p>
+                          <p>paybill number:03032006</p>
+                        </div>
+                    </form>
                   </div>
                 </div>
+                <div class="col-md-4">
+                  <div class="mapouter">
+                    <div class="gmap_canvas">
+                      <iframe width="350" height="180" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Yaya%20center&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                      </iframe>
+                    </div>
+                    <style>
+                      .mapouter {
+                        position: relative;
+                        text-align: right;
+                        height: 180px;
+                        width: 350px;
+                      }
+
+                      .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        height: 180px;
+                        width: 350px;
+                      }
+                    </style>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
               </div>
+              <div class="row">
+                <div class="container text-center footer">
+                  <p>&copy; 2019 | Pizza Delight</p>
+                </div>
               </div>
             </div>
         </div>
       </div>
     </div>
-            </div>
-        </div>
-       
+  </div>
+  </div>
+  </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
