@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+body{
+  font-family: 'Fugaz One', cursive; 
+}
 .title{
-  color: black;
-  
+  color:aqua;
+  font-weight: bolder;
+}
+.text{
+  color: aliceblue;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
 }
