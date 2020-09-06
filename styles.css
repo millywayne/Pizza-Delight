@@ -12,3 +12,12 @@ body{
   text-align: center;
   font-size: 30px;
 }
+.jumbotron{
+  background-color:darkorange;
+}
+p{
+  color: green;
+  width: 800px;
+  float: inline-end;
+  
+}
