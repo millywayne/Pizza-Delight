@@ -14,7 +14,7 @@ function getNumber() {
   var selectedNumber = document.getElementById("numberofpizza").value;
   return parseInt(selectedNumber);
 }
-function mushrooms() {
+function mushroom() {
   var mushroom = 0;
   var addMushroom = document.getElementById("topping");
   if (addMushroom.checked === true) {
@@ -23,7 +23,7 @@ function mushrooms() {
   return parseInt(mushroom);
 }
 
-function sausages() {
+function sausage() {
   var sausage = 0;
   var addSausage = document.getElementById("topping");
   if (addSausage.checked === true) {
@@ -31,7 +31,7 @@ function sausages() {
   }
   return parseInt(sausage);
 }
-function macons() {
+function macon() {
   var macon = 0;
   var addMacon = document.getElementById("topping");
   if (addMacon.checked === true) {
@@ -57,7 +57,7 @@ function mozarellaCheese() {
 }
 function calctotalPrice() {
   event.preventDefault();
-  var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost() * getNumber());
+  var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
 
   console.log(totalPrice);
   alert("Your order of " + getNumber() + " pizzas has been processed. Your total amount payable is " + totalPrice + ".")

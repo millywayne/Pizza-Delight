@@ -24,7 +24,7 @@
           <p class="text">ENJOY!</p>
         </div>
       </div>
-      <h4 id="about-us">ABOUT US</h4>
+      <h4 id="about">ABOUT US</h4>
       <P>Our aim and goal is to make your pizza experience memorable.Pizza Delite has friendly and great customer
         service that will leave you smiling and satisfied. We not only sell you pizza bt also a great time with us!</P>
       <p>Our pizzas are pocket friendly. We have them on offer every friday, buy one get one free.It is Furahiday for
@@ -34,35 +34,35 @@
         good and efficient like that! Visit us today and get the whole wonderful experince while enjoying our delightful
         pizza</p>
       <p>You can dine at our prestigious cafe or make a take-out order at no extra cost. Place your order below for your
-        free (within Nairobi and its environs) delivery:</p>
+        delivery, which will cost you only sh.200:</p>
       <div class="slideshow-container">
         <div class="mySlides">
           <h5 class="bg-danger">Margarita</h5>
-          <img src="images/margaritta.jpg" width="1000px" height=400px>
+          <img src="images/margaritta.jpg" width="800px" height=400px>
         </div>
         <div class="mySlides">
           <h5 class="bg-danger">Barbecue Chicken</h5>
-          <img src="images/barbecue chicken.jpeg" width="1000px" height="400px">
+          <img src="images/barbecue chicken.jpeg" width="800px" height="400px">
         </div>
         <div class="mySlides">
           <h5 class="bg-danger">Sea Food</h5>
-          <img src="images/seafood.jpg" width="1000px" height="400px"></a>
+          <img src="images/seafood.jpg" width="800px" height="400px"></a>
         </div>
         <div class="mySlides">
           <h5 class="bg-danger">Hawaiian</h5>
-          <img src="images/hawaiian.jpg" width="1000px" height="400px"></a>
+          <img src="images/hawaiian.jpg" width="800px" height="400px"></a>
         </div>
         <div class="mySlides">
           <h5 class="bg-danger">White pepper</h5>
-          <img src="images/white pepper.png" width="1000px" height="400px"></a>
+          <img src="images/white pepper.png" width="800px" height="400px"></a>
         </div>
         <div class="mySlides">
           <h5 class="bg-danger">variety</h5>
-          <img src="images/pizza-.jpg" width="1000px" height="400px"></a>
+          <img src="images/pizza-.jpg" width="800px" height="400px"></a>
         </div>
         <div class="mySlides">
           <h5 class="bg-danger">Spicy Peri-Peri</h5>
-          <img src="images/spicy peri peri.jpg" width="1000px" height="400px"></a>
+          <img src="images/spicy peri peri.jpg" width="800px" height="400px"></a>
         </div>
         <h4>OUR SERVICES</h4>
         <h5>BY THE BEST, FOR THE BEST!</h5>
@@ -108,7 +108,7 @@
             </ol>
             <label class="bg-success">Select from Deluxe Flavours:</label>
             <select class="custom-select custom-select-md mb-3 flavour" required="required">
-             <!---- <option value="0">Select</option>-->
+              <option value="0">Select</option>
               <option value="veg feast">Veg Feast</option>
               <option value="cheese burger">Cheese Burger</option>
               <option value="meat deluxe">Meat Deluxe</option>
@@ -118,7 +118,7 @@
               <option value="roastveg $ feta">Roast Veg $ Feta</option>
               <option value="spicy boerewors">Spicy Boerewors</option>
             </select>
-          <!---- <label>Select from Classic Flavours:</label>
+            <label>Select from Classic Flavours:</label>
             <select class="custom-select custom-select-md mb-3 flavour" required="required">
               <option value="0">Select</option>
               <option value="chicken $ mushroom">Chicken $ Mushroom</option>
@@ -128,8 +128,8 @@
               <option value="bbqsteak">BBQ Steak</option>
               <option value="vegtikka">Veg Tikka</option>
               <option value="periperi chicken">Peri-Peri Chicken</option>
-            </select>-->
-          
+            </select>
+
             <label>Select Size:</label>
             <select class="custom-select custom-select-md mb-3" id="size" required="required">
               <option value="0">Select</option>
@@ -147,95 +147,92 @@
             </select>
             <label for="Toppings">Select Your Toppings @ sh.100 </label><br>
             <label for="">Choose your Desired toppings</label> <br>
-                    <input value="100" type="checkbox" id="topping">Mushrooms</input>
-                    <input value="100" type="checkbox" id="topping">Sausages</input>
-                    <input value="100" type="checkbox" id="topping">Macons</input>
-                    <input value="100" type="checkbox" id="topping">Mince</input>
-                    <input value="100" type="checkbox" id="topping">Mozarella Cheese</input>
-
-                    <label for="">Input Quantity</label>
-                    <input class="form-control form-group" type="text" id="numberofpizza"></input>
-                    <button name="button" type="submit" id="submit" value="Check-Out"
-                        onclick="calctotalPrice()">Submit</button>
-                </form>
-            </div>
-
-            <div class="col-md-6">
-                <div id="formlocation">
-                    <h3>For delivery services,enter your location details below</h3>
-                    <form id="delivery">
-                        <label for="name">Name</label>
-                        <input class="form-control" type="text" name="" id="name" required="required"></input>
-                        <label for="location">Location</label>
-                        <input class="form-control" type="text" id="location" placeholder="location..."></input>
-                        <label for="phonenumber">Phone Number</label>
-                        <input class="form-control" type="tel" placeholder="Number" id="number"></input> <br>
-                        <button type="submit" name="button" id="submit">submit</button>
-                    </form>
+            <input value="100" type="checkbox" id="topping">Mushroom</input>
+            <input value="100" type="checkbox" id="topping">Sausage</input>
+            <input value="100" type="checkbox" id="topping">Macon</input>
+            <input value="100" type="checkbox" id="topping">Mince</input>
+            <input value="100" type="checkbox" id="topping">Mozarella Cheese</input>
+            <label for="">Input Quantity</label>
+            <input class="form-control form-group" type="text" id="numberofpizza"></input>
+            <button name="button" type="submit" id="submit" value="Check-Out" onclick="calctotalPrice()">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="formlocation">
+            <h3>For delivery services,enter your location details below</h3>
+            <form id="delivery">
+              <label for="name">Full Name</label>
+              <input class="form-control" type="text" name="Name" id="name"  placeholder="Name here..."r equired="required"></input>
+              <label for="location">Adress</label>
+              <input class="form-control" type="text" id="location" placeholder="Adress here..."></input>
+              <label for="phonenumber">Phone </label>
+              <input class="form-control" type="tel" placeholder="Number here..." id="number"></input> <br>
+              <button type="submit" name="button" id="submit">submit</button>
+            </form>
             <div class="col-sm-7">
               <div id="information">
                 <p>Your order is being processed and will be delivered to your doorstep within an hour.</p>
                 <p>Due to the Corona pandemic, we will not be receiving cash. See our other modes of payment below.</p>
                 <p>Enjoy our delicious pizza, and have a lovely time!</p>
               </div>
-                <div class="Get in touch">
-                  <h5>contact us on:</h5>
-                  <p><i class="fa fa-map-marker fa-2x">&nbsp;yaya center,second floor</i></p>
-                  <p><i class="fa fa-phone">&nbsp;0710585434,0794973746</i></p>
-                  <p><i class="fa fa-email">&nbsp;info@pizzadelite.com</i></p>
+              <div class="Get in touch">
+                <h5>contact us on:</h5>
+                <p><i class="fa fa-map-marker fa-2x">&nbsp;yaya center,second floor</i></p>
+                <p><i class="fa fa-phone">&nbsp;0710585434,0794973746</i></p>
+                <p><i class="fa fa-email">&nbsp;info@pizzadelite.com</i></p>
+              </div>
+              <div class="social icons">
+                <div id="contacts" class="small-divs">
+                  <h5>Follow us</h5>
+                  <p><i class="fa fa-facebook-square">&nbsp;Pizza Delite</i></p>
+                  <p><i class="fa fa-instagram">&nbsp;Pizza Delite</i></p>
+                  <p><i class="fa fa-youtube ">&nbsp;Pizza Delite</i></p>
+                  <p><i class="fa fa-twitter ">&nbsp;Pizza Delite</i></p>
                 </div>
-                <div class="social icons">
-                  <div id="contacts" class="small-divs">
-                    <h5>Follow us</h5>
-                    <p><i class="fa fa-facebook-square">&nbsp;Pizza Delite</i></p>
-                    <p><i class="fa fa-instagram">&nbsp;Pizza Delite</i></p>
-                    <p><i class="fa fa-youtube ">&nbsp;Pizza Delite</i></p>
-                    <p><i class="fa fa-twitter ">&nbsp;Pizza Delite</i></p>
-                  </div>
-                  <div class="container">
-                    <form action="/action_page.php">
-                      <div class="col-50">
-                        <i class="fa fa-check-square" aria-hidden="true"></i>
-                        <label for="fname">Accepted Cards</label>
-                        <div class="icon-container">
-                          <i class="fa fa-cc-visa" style="color:navy;"></i>
-                          <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                          <p>Lipa na mpesa also available</p>
-                          <p>paybill number:03032006</p>
-                        </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="mapouter">
-                    <div class="gmap_canvas">
-                      <iframe width="350" height="180" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=Yaya%20center&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                      </iframe>
-                    </div>
-                    <style>
-                      .mapouter {
-                        position: relative;
-                        text-align: right;
-                        height: 180px;
-                        width: 350px;
-                      }
-
-                      .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 180px;
-                        width: 350px;
-                      }
-                    </style>
-                  </div>
+                <div class="container">
+                  <form action="/action_page.php">
+                    <div class="col-50">
+                      <i class="fa fa-check-square" aria-hidden="true"></i>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <p>Lipa na mpesa also available</p>
+                        <p>paybill number:03032006</p>
+                      </div>
+                  </form>
                 </div>
               </div>
-              <div class="container text-center footer">
-                <h6>&copy; 2019 | Pizza Delite</h6>
+              <div class="col-md-4">
+                <div class="mapouter">
+                  <div class="gmap_canvas">
+                    <iframe width="350" height="180" id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=Yaya%20center&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                      frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                    </iframe>
+                  </div>
+                  <style>
+                    .mapouter {
+                      position: relative;
+                      text-align: right;
+                      height: 180px;
+                      width: 350px;
+                    }
+
+                    .gmap_canvas {
+                      overflow: hidden;
+                      background: none !important;
+                      height: 180px;
+                      width: 350px;
+                    }
+                  </style>
+                </div>
               </div>
             </div>
+            <div class="container text-center footer">
+              <h6>&copy; 2019 | Pizza Delite</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>

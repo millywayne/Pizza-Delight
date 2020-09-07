@@ -18,7 +18,7 @@ body{
 p{
   color: green;
   width: 800px;
-  float: inline-end;
+  
   
 }
 h4{
@@ -37,3 +37,58 @@ h4{
   padding-right: 10%;
   padding-left: 10%;
   font-size: 28px;
+}
+.media{
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  background: transparent;
+}
+input[type=text] {
+  background:transparent;
+  color: white;
+}
+::-webkit-input-placeholder {
+  background:transparent;
+  color: white;
+}
+.services{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+#address{
+  width: 20px;
+  margin-left: 40%;
+  margin-bottom: 20px;
+}
+#name{
+  width: 100%;
+  margin-right: 30%;
+  margin-top: 6px;
+}
+#number{
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 4px;
+  justify-items: center 
+}
+input[type=name],input[type=tel],#comment{
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  font-family:'Fugaz One', cursive;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: 4px;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+}
