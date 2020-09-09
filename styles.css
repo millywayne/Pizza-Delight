@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 body{
   font-family: 'Fugaz One', cursive; 
+  text-align: center;
   
 }
 .title{
   color:aqua;
   font-weight: bolder;
+  background: none;
 }
 .text{
   color: aliceblue;
   font-weight: bold;
   text-align: center;
   font-size: 30px;
+  background: none;
 }
 .jumbotron{
   background-color:darkorange;
@@ -19,6 +22,8 @@ body{
 p{
   color: green;
   width: 600px;
+  background-color: rgb(243, 243, 148);
+  box-sizing: border-box;
   
   
 }
@@ -93,11 +98,38 @@ input[type=name],input[type=tel],#comment{
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
 }
-#about-us .content{
-  padding: 65px 50px 85px;
-  width: 100%;
-  background-color:blue;
-  float:right;
-  text-align: justify;
-  overflow-x: hidden;
+.about{
+font-size: 20px;
+margin-left: 200px;
+text-align: left;
+width: 650px;
+background-color: rgb(245, 245, 145);
+}
+.col-md-6{
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+.col-sm-6{
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+.submit{
+  margin-top: 10px;
+}
+ol{
+  background: none;
+}
+h7{
+  text-align: left;
 }
