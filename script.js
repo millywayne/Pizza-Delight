@@ -1,5 +1,6 @@
 function getSizeCost() {
   var selectedSize = document.getElementById("size").value;
+  console.log(selectedSize)
   return parseInt(selectedSize);
 }
 function getCrustCost() {
@@ -8,7 +9,9 @@ function getCrustCost() {
 }
 function getToppingCost() {
   var selectedTopping = document.getElementById("topping").value;
+  console.log(selectedTopping)
   return parseInt(selectedTopping);
+
 }
 function getNumber() {
   var selectedNumber = document.getElementById("numberofpizza").value;
@@ -57,20 +60,22 @@ function mozarellaCheese() {
 }
 function calctotalPrice() {
   event.preventDefault();
-  var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
 
-  console.log(totalPrice);
-  alert("Your order of " + getNumber() + " pizzas has been processed. Your total amount payable is " + totalPrice + ".")
+  var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
+  
+  console.log(getSizeCost() ,getToppingCost(), getCrustCost(), getNumber());
+
+ alert("Your order of " + getNumber() + " pizza has been processed. Your total amount payable is " + totalPrice +".")
 }
+
 $(document).ready(function () {
   $("#delivery").submit(function () {
-
     var name = $("input#name").val();
     var number = $("input#number").val();
     var location = $("input#location").val();
 
-    alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh.200. Thank you for choosing Pizza Delite!");
-   
+    alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour. The delivery will cost ksh.200. Thank you for choosing Pizza Delite!");
+
   });
 
 });

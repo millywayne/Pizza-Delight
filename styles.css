@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 body{
   font-family: 'Fugaz One', cursive; 
+  
 }
 .title{
   color:aqua;
@@ -17,7 +18,7 @@ body{
 }
 p{
   color: green;
-  width: 800px;
+  width: 600px;
   
   
 }
@@ -91,4 +92,12 @@ input[type=name],input[type=tel],#comment{
   text-align: justify;
   -ms-text-justify: distribute-all-lines;
   text-justify: distribute-all-lines;
+}
+#about-us .content{
+  padding: 65px 50px 85px;
+  width: 100%;
+  background-color:blue;
+  float:right;
+  text-align: justify;
+  overflow-x: hidden;
 }
